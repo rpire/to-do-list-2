@@ -8,6 +8,10 @@ module.exports = {
     gen: './src/gen_html.js',
     check: './src/check_complete.js',
   },
+  devtool: 'inline-source-map',
+  devServer: {
+    contentBase: './dist',
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
